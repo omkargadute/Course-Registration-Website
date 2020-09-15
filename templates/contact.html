@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'contact.css'%}">
+    <title>contact us</title>
+</head>
+<body>
+    <div class="contact-main">
+        <h1>contact us</h1>
+        <div class="border"></div>
+        <form action="index.html" class="contact-form">
+            <input type="text" class="contact-txt-form" placeholder="Name">
+            <input type="text" class="contact-txt-form" placeholder="E-mail">
+            <input type="text" class="contact-txt-form" placeholder="Mobile">
+            <textarea class="contact-txt-form" placeholder="Message\"></textarea>           
+            <button class="btn=send">send</button>
+        </form>
+    </div>
+</body>
+</html>

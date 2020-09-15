@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+
+        <title>Urban Insight</title>
+        {% load static%}
+        <link rel="stylesheet" href="{% static 'registerstyle.css'%}">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="{% static 'java.js'%}"></script>
+    </head>
+
+
+    <body>
+
+        <header class="header1 group">
+
+       
+
+        <div class="can">
+
+        <hr class="solid">    
+
+            <h1 class="logo">
+
+                <a href="pj.html" ><img src="{% static 'logo.jpg'%}"
+
+                    alt="Image of logo" height="120px" width="120px">URBAN INSIGHT</a>
+
+            </h1>
+
+            <br>
+
+            <br>
+
+            <br>
+
+            <br>
+
+            <br>
+
+            <h3 class="tag">Ulsoor, Bangalore</h3>
+
+            <br>
+
+        </div>
+
+            <nav class="nav nav1 hi b">
+
+                <a href="pj.html">Home</a>&emsp;&emsp;&emsp;
+
+                &emsp;&emsp;&emsp;<a href="courses.html">Courses</a>&emsp;&emsp;&emsp;
+
+                &emsp;&emsp;&emsp;<a href="text.html">About Us</a>&emsp;&emsp;&emsp;
+
+                &emsp;&emsp;&emsp;<a href="contact.html">Contact Us</a>&emsp;&emsp;&emsp;    
+
+            </nav>
+
+         
+
+        </header>
+
+
+        <section class="row">
+
+            <div class="grid">
+
+
+                <section class="col-2-3">
+
+                    <h2>--REGISTER--</h2>
+
+                    <hr class="solid1"><br><br>
+
+                    <h4>An Investment In KNOWLEDGE Always</h4>
+
+                       <h4> Pays The Best INTEREST!</h4>
+
+                    <h5>~BENJAMIN FRANKLIN</h5><br><br>
+
+                    <h3>Hurry Up!</h3>
+
+                    <p>Please fill the form beside to Register for courses at Urban Insight.
+
+                    </p><br><br><br>
+
+                    <h3>Why Register?</h3>
+
+                    <ul class="a">
+
+                        <li>World Class Faculty</li><br>
+
+                        <li>Certificate Courses</li><br>
+
+                        <li>1-1 Personal help from experts</li><br>
+
+                        <li>Resume-worthy Projects</li><br>
+
+                        <li>Excellent curriculum</li>
+
+                      </ul>
+
+
+                </section><!--
+
+               
+
+                -->
+
+                <div class="vl"></div>
+
+                <form class="col-1-3" action="#" method="post">
+                    {% csrf_token %}
+
+                    <section class="container">
+
+                    <fieldset class="register">
+
+                        <h1> Fill the Form</h1>
+
+                        <p>
+
+                        <label>
+
+                            Name <br>
+
+                            <input type="text" name="name1" placeholder="First Name" required>
+
+                            <input type="text" name="name2" placeholder="Last Name" required>
+
+                        </label>
+
+                        </p>
+
+                        <p>
+
+                        <label>
+
+                            Gender<br>
+
+                            <input type="radio" name="gender" value="male" checked> Male
+
+                            <input type="radio" name="gender" value="female"> Female
+
+                            <input type="radio" name="gender" value="other"> Other
+
+                        </label>
+
+                        </p>
+
+                        <p>
+
+                         <label>
+
+                            Email<br>
+
+                            <input type="email" name="email" placeholder="Email Address" required>
+
+                        </label>
+
+                        </p>
+
+                        <p>
+
+                        <label>
+
+                            Select Course<br>
+
+                            <select name="course">
+
+                            <option value="Web Development">Web Development</option>
+
+                           
+
+                            <option value="Ethical Hacking">Ethical Hacking</option>
+
+                            <option value="Data Science">Data Science</option>
+
+                            <option value="Core Java">Core Java</option>
+
+                            <option value="Machine Learning">Machine Learning</option>
+
+                            </select>
+
+                        </label>  
+
+                        </p>
+
+                    </fieldset>
+
+                    <button type="submit" class="registerbtn" value="submit" formaction="registerpageAction">Register</button>
+
+                    <button type="submit" class="registerbtn">Reset</button>
+
+                   </section>
+
+                </form>
+
+               
+
+             </div>
+
+        </section>
+
+        <footer class="footer1 can group">
+
+            <small>&copy; Shubham Arya</small>
+
+            <nav class="nav">
+
+                <a href="pj.html">Home</a>
+
+                <a href="courses.html">Courses</a>
+
+                <a href="text.html">About Us</a>
+
+                <a href="contact.html">Contact Us</a>
+
+            </nav>
+
+            <br><br>
+
+            <hr class="solid">
+
+        </footer>
+
+    </body>
+
+</html>

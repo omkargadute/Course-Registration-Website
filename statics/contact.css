@@ -1,0 +1,75 @@
+*
+{
+    padding: 0px;
+    margin:-0px;
+    font-family:'segoe UI';
+    
+}
+.contact-main
+{
+    background: url(1.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0px;
+}
+.contact-main h1
+{
+    text-align: center;
+    color: #111 ;
+}
+.border
+{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+.contact-form
+{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+     
+}
+.contact-txt-form
+{
+
+    display: ruby-base;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0px;
+    border: 0px;
+    background: #ddd;
+    padding: 20px 40px;
+    color: #111;
+}
+.contact-txt-form:hover
+{
+    box-sizing: 0 0 10px #34495e;
+
+}
+textarea .contact-txt-form
+{
+    resize: none;
+    height: 120px;
+}
+.contact-txt-form:focus
+{
+    box-shadow: 0 0 10px 4px #ddd;
+}
+.btn-send
+{
+    float:centre;
+    border:#111;
+    background: #111;
+    color: #ddd;
+    padding: 20px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-send:hover
+{
+    background:#111;
+        color:#ddd;
+}
